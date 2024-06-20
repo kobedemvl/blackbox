@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKBOX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="start-screen">
+        <h1>BLACKBOX</h1>
+        <input type="file" id="file-input" accept=".csv">
+        <button class="primary-button" onclick="loadFile()">Start Game</button>
+    </div>
+    <div id="game-container" style="display:none;">
+        <div id="question-container">
+            <h1 id="question"></h1>
+        </div>
+
+        <div id="choices-container">
+            <div class="choice" id="choice1"></div>
+            <div class="choice" id="choice2"></div>
+            <div class="choice" id="choice3"></div>
+        </div>
+
+
+        <div id="countdown-container">
+            <div id="countdown-circle">
+            </div>
+        </div>
+        <button class="primary-button" id="proceed-button" onclick="nextQuestion()">Proceed</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
